@@ -23,4 +23,15 @@ pipeline {
         }
     }
 }
+post {
+    always {
+        echo "i am awesome i run always"
+    }
+    success {
+        echo "i am run only success"
+    }
+    failure {
+        echo "i will run only failure senario"
+    }
+}
 }
